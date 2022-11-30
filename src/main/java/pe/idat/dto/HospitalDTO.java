@@ -4,7 +4,7 @@ public class HospitalDTO {
 	
 	private Integer id;
 	private String nombre;
-	private String ubicacion;
+
 	public Integer getId() {
 		return id;
 	}
@@ -17,12 +17,7 @@ public class HospitalDTO {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public String getUbicacion() {
-		return ubicacion;
-	}
-	public void setUbicacion(String ubicacion) {
-		this.ubicacion = ubicacion;
-	}
+
 	
 	
 	
