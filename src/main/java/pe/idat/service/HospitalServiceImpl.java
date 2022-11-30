@@ -27,7 +27,8 @@ public class HospitalServiceImpl implements HospitalService{
             dto = new HospitalDTO();
             
             dto.setNombre(hospital.getNombre());
-            dto.setUbicacion(hospital.getUbicacion());
+            dto.setId(hospital.getIdHospital());
+
             listadto.add(dto);
         }
 
@@ -43,7 +44,7 @@ public class HospitalServiceImpl implements HospitalService{
 
         HospitalDTO dto = new HospitalDTO();
         dto.setNombre(hospital.getNombre());
-        dto.setUbicacion(hospital.getUbicacion());
+        dto.setId(hospital.getIdHospital());
 
         return dto;
     }
@@ -53,7 +54,7 @@ public class HospitalServiceImpl implements HospitalService{
 
         Hospital hos = new Hospital();
         hos.setNombre(hospital.getNombre());
-        hos.setUbicacion(hospital.getUbicacion());
+        hos.setIdHospital(hospital.getId());
 
         repository.save(hos);
     }
@@ -64,11 +65,11 @@ public class HospitalServiceImpl implements HospitalService{
     }
 
     @Override
-    public void actualizar(HospitalDTO Hospital) {
+    public void actualizar(HospitalDTO hospital) {
 
     	Hospital hos = new Hospital();
-    	hos.setNombre(hos.getNombre());
-    	hos.setUbicacion(hos.getUbicacion());
+    	hos.setNombre(hospital.getNombre());
+    	hos.setIdHospital(hospital.getId());
 
         repository.saveAndFlush(hos);
     }

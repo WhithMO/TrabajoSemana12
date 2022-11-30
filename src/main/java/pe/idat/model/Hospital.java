@@ -16,8 +16,6 @@ public class Hospital {
 	
 	private String nombre;
 	
-	private String ubicacion;
-
 	public Integer getIdHospital() {
 		return idHospital;
 	}
@@ -33,14 +31,5 @@ public class Hospital {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
-	public String getUbicacion() {
-		return ubicacion;
-	}
-
-	public void setUbicacion(String ubicacion) {
-		this.ubicacion = ubicacion;
-	}
-	
 
 }
